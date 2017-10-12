@@ -1,13 +1,14 @@
 param([String]$nugetRestoreAltSource = "")
 
 
-$packages = @(
-	[pscustomobject]@{ Package = "Riganti.Utils.Infrastructure.Empty"; Directory = "Riganti.Utils.Infrastructure.Empty" }
-)
+$scriptRoot = Split-Path $MyInvocation.MyCommand.Path
+. "$scriptRoot\ProjectList.ps1"
 
 foreach ($package in $packages) {
 	cd .\$($package.Directory)
-		
+    
+    Write-Host "Packing $package..."
+
 	& dotnet pack --configuration Release --output "..\.nupkgs" | Out-Host
 	cd ..
 }

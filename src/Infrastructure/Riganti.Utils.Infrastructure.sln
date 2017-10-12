@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{662DF6
 		Tools\deploy\GitTagVersion.ps1 = Tools\deploy\GitTagVersion.ps1
 		Tools\deploy\Invoke-Git.ps1 = Tools\deploy\Invoke-Git.ps1
 		Tools\deploy\PackPackages.ps1 = Tools\deploy\PackPackages.ps1
+		Tools\deploy\ProjectList.ps1 = Tools\deploy\ProjectList.ps1
 		Tools\deploy\publish.ps1 = Tools\deploy\publish.ps1
 		Tools\deploy\PushPackages.ps1 = Tools\deploy\PushPackages.ps1
 		Tools\deploy\SetVersion.ps1 = Tools\deploy\SetVersion.ps1

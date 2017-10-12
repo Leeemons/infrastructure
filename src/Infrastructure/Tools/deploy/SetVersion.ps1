@@ -1,8 +1,8 @@
 param([String]$version)
 
-$packages = @(
-	[pscustomobject]@{ Package = "Riganti.Utils.Infrastructure.Empty"; Directory = "Riganti.Utils.Infrastructure.Empty" }
-)
+
+$scriptRoot = Split-Path $MyInvocation.MyCommand.Path
+. "$scriptRoot\ProjectList.ps1"
 
 foreach ($package in $packages) {
     $filePath = ".\$($package.Directory)\$($package.Directory).csproj"
