@@ -1,4 +1,6 @@
 param([String]$branchName, [String]$repoUrl)
 
-git checkout $branchName
-git -c http.sslVerify=false pull $repoUrl $branchName
+. ".\Invoke-Git.ps1"
+
+invoke-git checkout $branchName
+invoke-git -c http.sslVerify=false pull $repoUrl $branchName
