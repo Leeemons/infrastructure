@@ -1,6 +1,7 @@
 param([String]$version, [String]$branchName, [String]$repoUrl)
 
-. ".\Invoke-Git.ps1"
+$scriptRoot = Split-Path $MyInvocation.MyCommand.Path
+. "$scriptRoot\Invoke-Git.ps1"
 
 invoke-git tag "v$($version)" HEAD
 invoke-git commit -am "NuGet package version $version"
