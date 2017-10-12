@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{966CB7F7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{662DF63A-F2B2-4919-B0BA-012C66D1AE40}"
 	ProjectSection(SolutionItems) = preProject
-		Tools\deploy\01-CleanOldGeneratedPackages.ps1 = Tools\deploy\01-CleanOldGeneratedPackages.ps1
-		Tools\deploy\02-GitCheckout.ps1 = Tools\deploy\02-GitCheckout.ps1
-		Tools\deploy\03-SetVersion.ps1 = Tools\deploy\03-SetVersion.ps1
-		Tools\deploy\04-BuildPackages.ps1 = Tools\deploy\04-BuildPackages.ps1
-		Tools\deploy\05-PushPackages.ps1 = Tools\deploy\05-PushPackages.ps1
-		Tools\deploy\06-GitTagVersion.ps1 = Tools\deploy\06-GitTagVersion.ps1
+		Tools\deploy\CleanOldGeneratedPackages.ps1 = Tools\deploy\CleanOldGeneratedPackages.ps1
+		Tools\deploy\GitCheckout.ps1 = Tools\deploy\GitCheckout.ps1
+		Tools\deploy\GitTagVersion.ps1 = Tools\deploy\GitTagVersion.ps1
+		Tools\deploy\PackPackages.ps1 = Tools\deploy\PackPackages.ps1
 		Tools\deploy\publish.ps1 = Tools\deploy\publish.ps1
+		Tools\deploy\PushPackages.ps1 = Tools\deploy\PushPackages.ps1
+		Tools\deploy\SetVersion.ps1 = Tools\deploy\SetVersion.ps1
 	EndProjectSection
 EndProject
 Global
