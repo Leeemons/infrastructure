@@ -3,9 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riganti.Utils.Infrastructure.Empty", "Riganti.Utils.Infrastructure.Empty\Riganti.Utils.Infrastructure.Empty.csproj", "{3616C9B2-AD43-4F9F-BEC6-122BDE9BCF5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Riganti.Utils.Infrastructure.Empty", "Riganti.Utils.Infrastructure.Empty\Riganti.Utils.Infrastructure.Empty.csproj", "{3616C9B2-AD43-4F9F-BEC6-122BDE9BCF5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riganti.Utils.Infrastructure.Empty.Tests", "Riganti.Utils.Infrastructure.Empty.Tests\Riganti.Utils.Infrastructure.Empty.Tests.csproj", "{EDD3E64F-B128-4965-B66A-43694D7C4674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Riganti.Utils.Infrastructure.Empty.Tests", "Riganti.Utils.Infrastructure.Empty.Tests\Riganti.Utils.Infrastructure.Empty.Tests.csproj", "{EDD3E64F-B128-4965-B66A-43694D7C4674}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{966CB7F7-D10B-4406-9775-A408C53B56A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{662DF63A-F2B2-4919-B0BA-012C66D1AE40}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\build\01-CleanOldGeneratedPackages.ps1 = Tools\build\01-CleanOldGeneratedPackages.ps1
+		Tools\build\02-GitCheckout.ps1 = Tools\build\02-GitCheckout.ps1
+		Tools\build\03-SetVersion.ps1 = Tools\build\03-SetVersion.ps1
+		Tools\build\04-BuildPackages.ps1 = Tools\build\04-BuildPackages.ps1
+		Tools\build\05-PushPackages.ps1 = Tools\build\05-PushPackages.ps1
+		Tools\build\06-GitTagVersion.ps1 = Tools\build\06-GitTagVersion.ps1
+		Tools\build\publish.ps1 = Tools\build\publish.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +57,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{662DF63A-F2B2-4919-B0BA-012C66D1AE40} = {966CB7F7-D10B-4406-9775-A408C53B56A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E96C65E-1C48-4FDC-84AF-298014ABB360}
