@@ -1,6 +1,6 @@
 param([String]$apiKey, [String]$server, [string]$enabled)
 
-if (-Not $enabled.ToLower() -eq "true") {
+if (-Not ($enabled.ToLower() -eq "true")) {
   Write-Host "Publishing to $server is disabled (enabled is $enabled)."
 } else {
   Write-Host "Publishing to $server is enabled (enabled is $enabled)."
