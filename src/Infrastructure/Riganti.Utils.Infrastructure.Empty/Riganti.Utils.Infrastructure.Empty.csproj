@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <VersionPrefix>0.0.20</VersionPrefix>
+    <VersionPrefix>0.0.22-pre01</VersionPrefix>
     <TargetFrameworks>netstandard1.6</TargetFrameworks>
     <AssemblyName>Riganti.Utils.Infrastructure.Empty</AssemblyName>
     <PackageId>Riganti.Utils.Infrastructure.Empty</PackageId>
