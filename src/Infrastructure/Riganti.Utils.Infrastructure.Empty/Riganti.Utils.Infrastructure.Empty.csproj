@@ -19,6 +19,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/riganti/infrastructure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/riganti/infrastructure.git</RepositoryUrl>
+    <PackageIconUrl>https://github.com/riganti/infrastructure/blob/master/img/logo_64x64_transparent.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
